@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTransaction"
+    android:background="#2c333d">
+
+    <RelativeLayout
+        android:id="@+id/dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+
+        android:background="#1f2732"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/add_transaction"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:textColorHint="#75FFF7F7"
+            android:textColor="@color/white"
+            android:padding="20dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/text_bg"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount"
+            android:background="@drawable/text_bg"
+            android:textColorHint="#75FFF7F7"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:padding="20dp"
+            android:layout_marginTop="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="16dp">
+
+            <CheckBox
+                android:id="@+id/cbincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/text_bg"/>
+
+
+            <CheckBox
+                android:id="@+id/cbexpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expense"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/text_bg"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:hint="@string/categories"
+            app:counterOverflowTextColor="@color/white"
+            android:textColorHint="#75FFF7F7"
+            android:background="@drawable/text_bg"
+            app:placeholderTextColor="@color/white"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_baseline_category_24"
+            app:startIconTint="@color/white">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompletetextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:background="#1f2732"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:text="@string/add"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

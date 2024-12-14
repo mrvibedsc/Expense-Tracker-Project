@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">ExpenseManager</string>
+    <string name="analytics">Analytics</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="login_now">Login Now</string>
+    <string name="please_login_to_continue_the_app">Please login to continue the app</string>
+    <string name="email_or_phone_number">Email or phone number</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="log_in">Log in</string>
+    <string name="create_account_now">Create Account Now</string>
+    <string name="enter_username_email_and_password_to_get_access_to_your_account">Enter username, email and password to get access to your account</string>
+    <string name="username">Username</string>
+    <string name="sign_in">Sign in</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="your_analytics">Your Analytics</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="income">INCOME</string>
+    <string name="expense">EXPENSE</string>
+    <string name="categories">Categories</string>
+    <string name="add">ADD</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="expense_manager">Expense Manager</string>
+    <string name="Track_manage_and_optimize_your_expences_effortlessly_with_our_expense_manager">Track,Manage and Optimize your expenses effortlessly with our expense manager.</string>
+    <string name="get_started">Get Started</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="total_balance">TOTAL BALANCE</string>
+    <string name="_0">Rs0</string>
+    <string name="total_income">TOTAL INCOME</string>
+    <string name="total_expense">TOTAL EXPENSE</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="abc_gmail_com">abc@gmail.com</string>
+    <string name="welcome">Welcome</string>
+    <string name="your_portfolio">Your Portfolio</string>
+    <string name="log_out">Log out</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="travel">Travel</string>
+    <string name="_200">Rs200</string>
+    <string name="note">Note</string>
+    <string name="_07_july_2022">07-July-2022</string>
+    <string name="person">person</string>
+    <string name="icon">Icon</string>
+    <string name="introimage">IntroImage</string>
+
+    <string-array name="categories">
+
+        <item>Salary</item>
+        <item>Food</item>
+        <item>Entertainment</item>
+        <item>Insurance</item>
+        <item>Travel</item>
+        <item>Medicines</item>
+        <item>Personal</item>
+        <item>Housing</item>
+        <item>Others</item>
+
+    </string-array>
+</resources>
